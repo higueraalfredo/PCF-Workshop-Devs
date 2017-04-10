@@ -4,24 +4,39 @@
 
 This one day hands-on classroom style session will provide developers (and operators) with hands on experience with Pivotal Cloud Foundry concepts, architecture and fundamentals of pushing code and building applications. The session includes presentations, demos and hands on labs
 
-8:00 AM - 8:30 AM::
- * Registration & Breakfast
-8:30 AM - 9:00 AM::
- * Keynote (TBD)
-9:00 AM - 10:00 AM::
- * Session 1: _Introduction_
-10:00 AM - 10:15 AM:: Break
-10:15 AM - 11:15 AM::
- * Session 2: _PCF Architecture & Operations_
-11:15 AM - 12:15 PM::
- * Session 3: _Continuous Delivery & Microservices (CN Enterprise)_
-12:15 PM - 12:45 PM:: Lunch
-12:45 PM - 1:30 PM::
- * Session 4: _Leveraging the Pivotal Cloud Foundry Marketplace_
-1:30 PM - 4:00 PM::
- * Developer Workshop: _Pushing Code w/PCF_
-4:00 PM - 4:30 PM:: Wrap Up, Q/A, Feedback
+9:00 AM - 9:30 AM::
+ *Introductions, PCF architecture and operation
 
+9:45 AM - 10:10 AM::
+  *Lab 1 (application deployment with cf push)
+  
+10:10 AM - 10:30 AM::
+ * Application Services and Marketplace
+
+10:30 - 11:00 AM::
+ * Lab 2 (self provision and binding services to applications)
+ 
+11:00 - 11:40 AM ::
+  * Cloud Native application patterns and Blue Green deployments
+  
+11:40 - 12:00 PM::
+  * Lab 3 (Blue/Green deployment with PCF)
+
+12:00 PM - 1:00 PM:: 
+  *Lunch
+  
+1:00 PM - 1:30 PM::
+  * Application monitoring
+
+1:30 PM - 2:00 PM::
+  * Lab 4 (logs, monitoring)
+
+2:00 PM - 2:30 PM
+  * CI/CD Pipelines (concourse)
+
+2:45 PM - 3:00 PM::
+  * Advanced topics and questions (BOSH) 
+  
 == Course Materials
 
 * Session 1: link:presentations/Session_1_Introduction.pptx[Introduction]
