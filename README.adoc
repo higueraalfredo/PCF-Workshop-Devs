@@ -31,7 +31,7 @@ This one day hands-on classroom style session will provide developers (and opera
 1:30 PM - 2:00 PM::
   * Lab 4 (logs, monitoring)
 
-2:00 PM - 2:30 PM
+2:00 PM - 2:30 PM::
   * CI/CD Pipelines (concourse)
 
 2:45 PM - 3:00 PM::
