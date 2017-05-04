@@ -4,7 +4,7 @@
 
 This one day hands-on classroom style session will provide developers (and operators) with hands on experience with Pivotal Cloud Foundry concepts, architecture and fundamentals of pushing code and building applications. The session includes presentations, demos and hands on labs
 
-8:15 AM - 8:45 AM::
+8:30 AM - 9:00 AM::
  * Standup & Breakfast
 9:00 AM - 9:15 AM::
  * Keynote (Customer PCF Product Owner)
