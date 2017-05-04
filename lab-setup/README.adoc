@@ -1,4 +1,4 @@
-= Workshop Setup
+= Workshop Setup (FOR PCF workshops only. Ignore if PWS)
 
 * List Admins in admins.txt
 * List Users by email in users.txt
