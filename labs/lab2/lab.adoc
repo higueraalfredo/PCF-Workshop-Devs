@@ -3,7 +3,7 @@
 [abstract]
 --
 The _Workshop_ application was designed to illustrate the ease with which data services can be bound to and utilized by applications running on Cloud Foundry.
-In this lab, we'll be binding the application to a MySQL databases.
+In this lab, we'll be binding the application to a PostgreSQL databases.
 
 Cloud Foundry services are managed through two primary types of operations:
 
@@ -44,7 +44,7 @@ image::lab1.png[]
 
 and you'll see the same service/plan/description listing in the browser:
 
-image::lab2.png[]
+image::lab2_2.png[]
 
 == Creating and Binding to a Service Instance
 
