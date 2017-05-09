@@ -23,7 +23,7 @@ Follow the prompts
 . Change to the _cf-spring-mvc-boot_ sample application directory:
 +
 ----
-$ cd $BOOTCAMP_HOME/cf-spring-mvc-boot
+$ cd <workshop direcgtory>/cf-spring-mvc-boot
 ----
 
 . Push the application!
@@ -36,16 +36,15 @@ You should see output similar to the following listing. Take a look at the listi
 +
 ====
 ----
-Using manifest file /Users/phopper/workspace/NBCU-PCF-Workshop-101/cf-spring-mvc-boot/manifest.yml <1>
+Using manifest file /Users/mling/workspace/PCF-Workshop-101/cf-spring-mvc-boot/manifest.yml
 
-Creating app workshop in org TELCO / space hopper as phopper@pivotal.io...
-OK <2>
+Creating app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+OK
 
-Creating route workshop-philologic-catchpolery.vert.fe.gopivotal.com...
-OK <3>
+Creating route workshop-juicier-asset.cfapps.io...
+OK
 
-Binding workshop-philologic-catchpolery.vert.fe.gopivotal.com to workshop...
-OK <4>
+Binding workshop-juicier-asset.cfapps.io to workshop...
 
 Uploading workshop... <5>
 Uploading app files from: /Users/phopper/workspace/NBCU-PCF-Workshop-101/cf-spring-mvc-boot/target/cf-spring-mvc-boot-0.0.1-SNAPSHOT.jar
