@@ -23,7 +23,7 @@ Follow the prompts
 . Change to the _pcf-autoscale_ sample application directory:
 +
 ----
-$ cd $BOOTCAMP_HOME/pcf-autoscale
+$ cd <workshop directory>/pcf-autoscale
 ----
 
 . Push the application!
