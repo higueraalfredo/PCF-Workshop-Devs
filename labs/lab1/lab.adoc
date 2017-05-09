@@ -36,56 +36,94 @@ You should see output similar to the following listing. Take a look at the listi
 +
 ====
 ----
-Using manifest file /Users/mling/workspace/PCF-Workshop-101/cf-spring-mvc-boot/manifest.yml
+Using manifest file /Users/mling/PCF-Workshop-Devs/cf-spring-mvc-boot/manifest.yml
 
-Creating app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+Updating app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
 OK
 
-Creating route workshop-juicier-asset.cfapps.io...
+Creating route workshop-uncorroded-ironmaster.cfapps.io...
 OK
 
-Binding workshop-juicier-asset.cfapps.io to workshop...
-
-Uploading workshop... <5>
-Uploading app files from: /Users/phopper/workspace/NBCU-PCF-Workshop-101/cf-spring-mvc-boot/target/cf-spring-mvc-boot-0.0.1-SNAPSHOT.jar
-Uploading 10.6M, 153 files
-Done uploading               
+Binding workshop-uncorroded-ironmaster.cfapps.io to workshop...
 OK
 
-Starting app workshop in org TELCO / space hopper as phopper@pivotal.io... <6>
------> Downloaded app package (27M)
------> Java Buildpack Version: v3.1.1 (offline) | https://github.com/cloudfoundry/java-buildpack#7a538fb
------> Downloading Open Jdk JRE 1.8.0_51 from https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_51.tar.gz (found in cache)
-       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.5s) <7>
------> Downloading Open JDK Like Memory Calculator 1.1.1_RELEASE from https://download.run.pivotal.io/memory-calculator/trusty/x86_64/memory-calculator-1.1.1_RELEASE (found in cache)
-       Memory Settings: -Xss995K -Xmx382293K -Xms382293K -XX:MaxMetaspaceSize=64M -XX:MetaspaceSize=64M
------> Downloading Spring Auto Reconfiguration 1.7.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.7.0_RELEASE.jar (found in cache)
+Uploading workshop...
+Uploading app files from: /var/folders/gv/km8mhg4d7s9355xlhz0nk1280000gp/T/unzipped-app656488800
+Uploading 840.8K, 146 files
+Done uploading
+OK
 
------> Uploading droplet (72M) <8>
+Stopping app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+OK
 
-0 of 1 instances running, 1 starting
+Starting app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+Downloading binary_buildpack...
+Downloading python_buildpack...
+Downloading dotnet_core_buildpack_beta...
+Downloading php_buildpack...
+Downloading dotnet_core_buildpack...
+Downloaded binary_buildpack (152.5K)
+Downloading ruby_buildpack...
+Downloaded dotnet_core_buildpack_beta (99.4M)
+Downloading staticfile_buildpack...
+Downloading java_buildpack...
+Downloaded staticfile_buildpack (10.5M)
+Downloaded ruby_buildpack (313.1M)
+Downloading nodejs_buildpack...
+Downloaded php_buildpack (349.6M)
+Downloading go_buildpack...
+Downloaded nodejs_buildpack (79.1M)
+Downloaded java_buildpack (284.4M)
+Downloaded python_buildpack (390.7M)
+Downloaded dotnet_core_buildpack (552.9M)
+Downloaded go_buildpack (419.2M)
+Creating container
+Successfully created container
+Downloading app package...
+Downloading build artifacts cache...
+Downloaded build artifacts cache (109B)
+Downloaded app package (26.7M)
+-----> Java Buildpack Version: v3.15 (offline) | https://github.com/cloudfoundry/java-buildpack.git#a3a9e61
+-----> Downloading Open Jdk JRE 1.8.0_121 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.5s)
+-----> Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K
+-----> Downloading Container Certificate Trust Store 2.0.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-certificate-trust-store/container-certificate-trust-store-2.0.0_RELEASE.jar (found in cache)
+       Adding certificates to .java-buildpack/container_certificate_trust_store/truststore.jks (1.3s)
+-----> Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+Exit status 0
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (109B)
+Uploaded droplet (72.1M)
+Uploading complete
+Destroying container
+
+
 0 of 1 instances running, 1 starting
 1 of 1 instances running
 
 App started
 
+
 OK
 
-App workshop was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-1.1.1_RELEASE -memorySizes=metaspace:64m.. -memoryWeights=heap:75,metaspace:10,stack:5,native:10 -totMemory=$MEMORY_LIMIT) && SERVER_PORT=$PORT $PWD/.java-buildpack/open_jdk_jre/bin/java -cp $PWD/.:$PWD/.java-buildpack/spring_auto_reconfiguration/spring_auto_reconfiguration-1.7.0_RELEASE.jar -Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djava.security.egd=file:///dev/urandom org.springframework.boot.loader.JarLauncher` <9>
+App workshop was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) && JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password -Djava.security.egd=file:///dev/urandom" && SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
 
-Showing health and status for app workshop in org TELCO / space hopper as phopper@pivotal.io... <10>
+Showing health and status for app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
 OK
 
 requested state: started
 instances: 1/1
 usage: 512M x 1 instances
-urls: workshop-philologic-catchpolery.vert.fe.gopivotal.com
-last uploaded: Thu Sep 24 20:15:27 UTC 2015
+urls: workshop-juicier-asset.cfapps.io, workshop-uncorroded-ironmaster.cfapps.io
+last uploaded: Tue May 9 18:48:26 UTC 2017
 stack: cflinuxfs2
-buildpack: java-buildpack=v3.1.1-offline-https://github.com/cloudfoundry/java-buildpack#7a538fb java-main java-opts open-jdk-like-jre=1.8.0_51 open-jdk-like-memory-calculator=1.1.1_RELEASE spring-auto-reconfiguration=1.7.0_RELEASE
+buildpack: container-certificate-trust-store=2.0.0_RELEASE java-buildpack=v3.15-offline-https://github.com/cloudfoundry/java-buildpack.git#a3a9e61 java-main java-opts open-jdk-like-jre=1.8.0_121 open-jdk-like-memory-calculator=2.0.2_RELEASE spring-auto-reconfigur...
 
-     state     since                    cpu    memory           disk           details   
-#0   running   2015-09-24 02:16:11 PM   2.4%   392.6M of 512M   151.6M of 1G 
+     state     since                    cpu     memory           disk           details
+#0   running   2017-05-09 02:52:19 PM   93.3%   304.8M of 512M   153.8M of 1G
 ----
 <1> The CLI is using a manifest to provide necessary configuration details such as application name, memory to be allocated, and path to the application artifact.
 Take a look at `manifest.yml` to see how.
