@@ -48,8 +48,8 @@ image::lab2_2.png[]
 
 == Creating and Binding to a Service Instance
 
-. Let's begin by creating a MySQL service instance.
-From the Apps Manager UI service marketplace, select _MySQL for Pivotal Cloudfoundry_, select the *10mb-dev plan*, and provide an instance name.
+. Let's begin by creating a PostgreSQL service instance.
+From the Apps Manager UI service marketplace, select _ElephantSQL PostgreSQL as a Service_, select the *turtle plan (free)*, and provide an instance name.
 In the drop-down list next to _Bind to App_ select your workshop application.
 +
 image::lab3.png[]
