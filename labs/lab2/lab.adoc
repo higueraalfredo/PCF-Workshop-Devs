@@ -52,7 +52,7 @@ image::lab2_2.png[]
 From the Apps Manager UI service marketplace, select _ElephantSQL PostgreSQL as a Service_, select the *turtle plan (free)*, and provide an instance name.
 In the drop-down list next to _Bind to App_ select your workshop application.
 +
-image::lab3.png[]
+image::lab3_2.png[]
 
 . Notice the admonition to `Use 'cf restage' to ensure your env variable changes take effect`.
 Let's take a look at the environment variables for our application. We can do this by viewing to the homepage of the application.
@@ -96,7 +96,7 @@ Bound Services:
 
 . You may also verify your service was provisioned in the Apps Manager UI by clicking on your application and selecting the _Services_ tab.
 +
-image::lab4.png[]
+image::lab4_2.png[]
 +
 You should now see the service created in step 1 listed.
 
