@@ -751,7 +751,7 @@ Set the API target for the CLI: (set appropriate end point for your environment)
 </p>
 <div class="listingblock">
 <div class="content">
-<pre><code>$ cf api https://api.cfpoc2.internal.t-mobile.com --skip-ssl-validation</code></pre>
+<pre><code>$ cf api https://api.run.pivotal.io</code></pre>
 </div></div>
 </li>
 <li>
@@ -777,7 +777,7 @@ Change to the <em>cf-spring-mvc-boot</em> sample application directory:
 </p>
 <div class="listingblock">
 <div class="content">
-<pre><code>$ cd $BOOTCAMP_HOME/cf-spring-mvc-boot</code></pre>
+<pre><code>$ cd &lt;workshop directory&gt;/cf-spring-mvc-boot</code></pre>
 </div></div>
 </li>
 <li>
@@ -793,57 +793,94 @@ Push the application!
 <div class="content">
 <div class="listingblock">
 <div class="content">
-<pre><code>Using manifest file /Users/phopper/workspace/NBCU-PCF-Workshop-101/cf-spring-mvc-boot/manifest.yml <b>&lt;1&gt;</b>
+<pre><code>Using manifest file /Users/mling/PCF-Workshop-Devs/cf-spring-mvc-boot/manifest.yml
 
-Creating app workshop in org TELCO / space hopper as phopper@pivotal.io...
-OK <b>&lt;2&gt;</b>
+Updating app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+OK
 
-Creating route workshop-philologic-catchpolery.vert.fe.gopivotal.com...
-OK <b>&lt;3&gt;</b>
+Creating route workshop-uncorroded-ironmaster.cfapps.io...
+OK
 
-Binding workshop-philologic-catchpolery.vert.fe.gopivotal.com to workshop...
-OK <b>&lt;4&gt;</b>
+Binding workshop-uncorroded-ironmaster.cfapps.io to workshop...
+OK
 
-Uploading workshop... <b>&lt;5&gt;</b>
-Uploading app files from: /Users/phopper/workspace/NBCU-PCF-Workshop-101/cf-spring-mvc-boot/target/cf-spring-mvc-boot-0.0.1-SNAPSHOT.jar
-Uploading 10.6M, 153 files
+Uploading workshop...
+Uploading app files from: /var/folders/gv/km8mhg4d7s9355xlhz0nk1280000gp/T/unzipped-app656488800
+Uploading 840.8K, 146 files
 Done uploading
 OK
 
-Starting app workshop in org TELCO / space hopper as phopper@pivotal.io... <b>&lt;6&gt;</b>
------&gt; Downloaded app package (27M)
------&gt; Java Buildpack Version: v3.1.1 (offline) | https://github.com/cloudfoundry/java-buildpack#7a538fb
------&gt; Downloading Open Jdk JRE 1.8.0_51 from https://download.run.pivotal.io/openjdk/trusty/x86_64/openjdk-1.8.0_51.tar.gz (found in cache)
-       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.5s) <b>&lt;7&gt;</b>
------&gt; Downloading Open JDK Like Memory Calculator 1.1.1_RELEASE from https://download.run.pivotal.io/memory-calculator/trusty/x86_64/memory-calculator-1.1.1_RELEASE (found in cache)
-       Memory Settings: -Xss995K -Xmx382293K -Xms382293K -XX:MaxMetaspaceSize=64M -XX:MetaspaceSize=64M
------&gt; Downloading Spring Auto Reconfiguration 1.7.0_RELEASE from https://download.run.pivotal.io/auto-reconfiguration/auto-reconfiguration-1.7.0_RELEASE.jar (found in cache)
+Stopping app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+OK
 
------&gt; Uploading droplet (72M) <b>&lt;8&gt;</b>
+Starting app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
+Downloading binary_buildpack...
+Downloading python_buildpack...
+Downloading dotnet_core_buildpack_beta...
+Downloading php_buildpack...
+Downloading dotnet_core_buildpack...
+Downloaded binary_buildpack (152.5K)
+Downloading ruby_buildpack...
+Downloaded dotnet_core_buildpack_beta (99.4M)
+Downloading staticfile_buildpack...
+Downloading java_buildpack...
+Downloaded staticfile_buildpack (10.5M)
+Downloaded ruby_buildpack (313.1M)
+Downloading nodejs_buildpack...
+Downloaded php_buildpack (349.6M)
+Downloading go_buildpack...
+Downloaded nodejs_buildpack (79.1M)
+Downloaded java_buildpack (284.4M)
+Downloaded python_buildpack (390.7M)
+Downloaded dotnet_core_buildpack (552.9M)
+Downloaded go_buildpack (419.2M)
+Creating container
+Successfully created container
+Downloading app package...
+Downloading build artifacts cache...
+Downloaded build artifacts cache (109B)
+Downloaded app package (26.7M)
+-----&gt; Java Buildpack Version: v3.15 (offline) | https://github.com/cloudfoundry/java-buildpack.git#a3a9e61
+-----&gt; Downloading Open Jdk JRE 1.8.0_121 from https://java-buildpack.cloudfoundry.org/openjdk/trusty/x86_64/openjdk-1.8.0_121.tar.gz (found in cache)
+       Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.5s)
+-----&gt; Downloading Open JDK Like Memory Calculator 2.0.2_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/trusty/x86_64/memory-calculator-2.0.2_RELEASE.tar.gz (found in cache)
+       Memory Settings: -Xss349K -Xmx681574K -XX:MaxMetaspaceSize=104857K -Xms681574K -XX:MetaspaceSize=104857K
+-----&gt; Downloading Container Certificate Trust Store 2.0.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-certificate-trust-store/container-certificate-trust-store-2.0.0_RELEASE.jar (found in cache)
+       Adding certificates to .java-buildpack/container_certificate_trust_store/truststore.jks (1.3s)
+-----&gt; Downloading Spring Auto Reconfiguration 1.10.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-1.10.0_RELEASE.jar (found in cache)
+Exit status 0
+Uploading droplet, build artifacts cache...
+Uploading build artifacts cache...
+Uploading droplet...
+Uploaded build artifacts cache (109B)
+Uploaded droplet (72.1M)
+Uploading complete
+Destroying container
 
-0 of 1 instances running, 1 starting
+
 0 of 1 instances running, 1 starting
 1 of 1 instances running
 
 App started
 
+
 OK
 
-App workshop was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-1.1.1_RELEASE -memorySizes=metaspace:64m.. -memoryWeights=heap:75,metaspace:10,stack:5,native:10 -totMemory=$MEMORY_LIMIT) &amp;&amp; SERVER_PORT=$PORT $PWD/.java-buildpack/open_jdk_jre/bin/java -cp $PWD/.:$PWD/.java-buildpack/spring_auto_reconfiguration/spring_auto_reconfiguration-1.7.0_RELEASE.jar -Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djava.security.egd=file:///dev/urandom org.springframework.boot.loader.JarLauncher` <b>&lt;9&gt;</b>
+App workshop was started using this command `CALCULATED_MEMORY=$($PWD/.java-buildpack/open_jdk_jre/bin/java-buildpack-memory-calculator-2.0.2_RELEASE -memorySizes=metaspace:64m..,stack:228k.. -memoryWeights=heap:65,metaspace:10,native:15,stack:10 -memoryInitials=heap:100%,metaspace:100% -stackThreads=300 -totMemory=$MEMORY_LIMIT) &amp;&amp; JAVA_OPTS="-Djava.io.tmpdir=$TMPDIR -XX:OnOutOfMemoryError=$PWD/.java-buildpack/open_jdk_jre/bin/killjava.sh $CALCULATED_MEMORY -Djavax.net.ssl.trustStore=$PWD/.java-buildpack/container_certificate_trust_store/truststore.jks -Djavax.net.ssl.trustStorePassword=java-buildpack-trust-store-password -Djava.security.egd=file:///dev/urandom" &amp;&amp; SERVER_PORT=$PORT eval exec $PWD/.java-buildpack/open_jdk_jre/bin/java $JAVA_OPTS -cp $PWD/. org.springframework.boot.loader.JarLauncher`
 
-Showing health and status for app workshop in org TELCO / space hopper as phopper@pivotal.io... <b>&lt;10&gt;</b>
+Showing health and status for app workshop in org Federal Workshops / space ming_test as mling@pivotal.io...
 OK
 
 requested state: started
 instances: 1/1
 usage: 512M x 1 instances
-urls: workshop-philologic-catchpolery.vert.fe.gopivotal.com
-last uploaded: Thu Sep 24 20:15:27 UTC 2015
+urls: workshop-juicier-asset.cfapps.io, workshop-uncorroded-ironmaster.cfapps.io
+last uploaded: Tue May 9 18:48:26 UTC 2017
 stack: cflinuxfs2
-buildpack: java-buildpack=v3.1.1-offline-https://github.com/cloudfoundry/java-buildpack#7a538fb java-main java-opts open-jdk-like-jre=1.8.0_51 open-jdk-like-memory-calculator=1.1.1_RELEASE spring-auto-reconfiguration=1.7.0_RELEASE
+buildpack: container-certificate-trust-store=2.0.0_RELEASE java-buildpack=v3.15-offline-https://github.com/cloudfoundry/java-buildpack.git#a3a9e61 java-main java-opts open-jdk-like-jre=1.8.0_121 open-jdk-like-memory-calculator=2.0.2_RELEASE spring-auto-reconfigur...
 
-     state     since                    cpu    memory           disk           details
-#0   running   2015-09-24 02:16:11 PM   2.4%   392.6M of 512M   151.6M of 1G</code></pre>
+     state     since                    cpu     memory           disk           details
+#0   running   2017-05-09 02:52:19 PM   93.3%   304.8M of 512M   153.8M of 1G</code></pre>
 </div></div>
 <div class="colist arabic"><ol>
 <li>
@@ -861,7 +898,7 @@ In this case, the CLI has created an application record for <em>Workshop</em> in
 <li>
 <p>
 All HTTP/HTTPS requests to applications will flow through Cloud Foundry&#8217;s front-end router called <a href="http://docs.cloudfoundry.org/concepts/architecture/router.html">(Go)Router</a>.
-Here the CLI is creating a route with random word tokens inserted (again, see <code>manifest.yml</code> for a hint!) to prevent route collisions across the default <code>devcloudwest.inbcu.com</code> domain.
+Here the CLI is creating a route with random word tokens inserted (again, see <code>manifest.yml</code> for a hint!) to prevent route collisions across the default <code>cfapps.io</code> domain.
 </p>
 </li>
 <li>
@@ -872,7 +909,7 @@ Routes can actually be bound to multiple applications to support techniques such
 </li>
 <li>
 <p>
-The CLI finally uploads the application bits to Pivotal Cloudfoundry. Notice that it&#8217;s uploading <em>75 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.
+The CLI finally uploads the application bits to Pivotal Cloudfoundry. Notice that it&#8217;s uploading <em>146 files</em>! This is because Cloud Foundry actually explodes a ZIP artifact before uploading it for caching purposes.
 </p>
 </li>
 <li>
@@ -965,7 +1002,7 @@ Delete the deployed application using the CLI
 <div id="footnotes"><hr /></div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-04-10 11:19:24 EDT
+Last updated 2017-05-09 15:11:24 EDT
 </div>
 </div>
 </body>
