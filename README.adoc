@@ -19,7 +19,7 @@ This one day hands-on classroom style session will provide developers (and opera
 12:45 PM - 2:30 PM::
  * Session 4: _Leveraging the Pivotal Cloud Foundry Marketplace
  * Lab 2
- * Lab 3_
+ * Lab 3::
 2:30 PM - 4:00 PM::Wrap Up, Q/A, Feedback
   
 == Course Materials
