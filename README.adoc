@@ -6,20 +6,20 @@ This one day hands-on classroom style session will provide developers (and opera
 
 8:30 AM - 9:00 AM::
  * Standup & Breakfast
-9:00 AM - 9:15 AM::
- * Keynote (Customer PCF Product Owner)
-9:15 AM - 10:00 AM::
+9:00 AM - 10:00 AM::
  * Session 1: _Introduction_
+ * Lab 1 
 10:00 AM - 10:15 AM:: Break
 10:15 AM - 11:15 AM::
- * Session 2: _PCF Architecture & Operations_ /Lab1
+ * Session 2: _PCF Architecture & Operations_ 
+ * Lab 2
 11:15 AM - 12:15 PM::
- * Session 3: _Continuous Delivery & Microservices (CN Enterprise)_ Lab1-Ruby
+ * Session 3: _Continuous Delivery & Microservices (CN Enterprise)_ 
+ * Lab 3
 12:15 PM - 12:45 PM:: Lunch
 12:45 PM - 2:30 PM::
  * Session 4: _Leveraging the Pivotal Cloud Foundry Marketplace
- * Lab 2
- * Lab 3
+ * Lab 4
 2:30 PM - 4:00 PM:: Wrap Up, Q/A, Feedback
   
 == Course Materials
@@ -35,10 +35,10 @@ This one day hands-on classroom style session will provide developers (and opera
 ** Lab 1 - From Zero to Pushing Your First Application
 *** link:labs/lab1/lab.adoc[**Java** Application]
 *** link:labs/lab1/lab-ruby.adoc[**Ruby** Application]
-** link:labs/lab2/lab.adoc[Lab 2 - Binding to Cloud Foundry Services]
-** link:labs/lab3/lab.adoc[Lab 3 - Operating Your Application]
-** link:labs/lab4/lab.adoc[Lab 4 - Monitoring Your Application]
-** link:labs/lab5/continuous-delivery-lab.adoc[Advanced Lab - Jenkins Integration]
+** link:labs/lab2/lab.adoc[Lab 2 - Operating Your Application ]
+** link:labs/lab3/lab.adoc[Lab 3 - Monitoring Your Application ]
+** link:labs/lab4/lab.adoc[Lab 4 - Binding to Cloud Foundry Services ] 
+** link:labs/lab5/continuous-delivery-lab.adoc[Advanced Lab - Jenkins Integration] (Optional)
 
 * Additional Resources
 ** Logging (http://docs.cloudfoundry.org/devguide/services/log-management-thirdparty-svc.html#papertrail) 
